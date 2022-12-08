@@ -1,3 +1,9 @@
+# Project Detail
+
+This project uses free-to-play-games api from rapidapi to show list of games. games can be updated by name, category or platform.
+
+clone the repo. run 'npm i' in project folder. then run 'ng serve' to start server.
+
 # AngularFreetoplayGameApi
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.2.
