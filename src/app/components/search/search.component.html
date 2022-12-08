@@ -1,0 +1,28 @@
+<div class="input-group m-3 gap-2 from-group d-flex">
+  <input
+    #search
+    class="form-control"
+    type="text"
+    placeholder="search by name"
+    (input)="inputUpdated()"
+  />
+  <div>
+    <select
+      name="options"
+      id="options"
+      [(ngModel)]="option"
+      class="form-select"
+    >
+      <option value="1">name</option>
+      <option value="2">category</option>
+      <option value="3">platform</option>
+    </select>
+  </div>
+
+  <input
+    class="btn btn-primary"
+    type="button"
+    value="search"
+    (click)="searchClicked(search.value)"
+  />
+</div>

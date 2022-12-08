@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { OfflineSearchComponent } from './offline-search.component';
+import { SearchComponent } from './search.component';
 
-describe('OfflineSearchComponent', () => {
-  let component: OfflineSearchComponent;
-  let fixture: ComponentFixture<OfflineSearchComponent>;
+describe('SearchComponent', () => {
+  let component: SearchComponent;
+  let fixture: ComponentFixture<SearchComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ OfflineSearchComponent ]
+      declarations: [ SearchComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(OfflineSearchComponent);
+    fixture = TestBed.createComponent(SearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

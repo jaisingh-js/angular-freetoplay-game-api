@@ -1,6 +1,10 @@
 <!-- <button class="btn btn-primary" routerLink="">Go Back</button> -->
 <div class="d-flex flex-column align-items-center">
-  <app-offline-search (inputText)="filterArray($event)"></app-offline-search>
+  <app-search
+    (inputText)="updateList($event)"
+    (inputChanged)="removeShowError()"
+  ></app-search>
+  <p class="text-danger" *ngIf="showError">{{ errorMessage }}</p>
 
   <div>
     <app-game-item

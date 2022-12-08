@@ -7,10 +7,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { AllGamesComponent } from './components/all-games/all-games.component';
 import { GameItemComponent } from './components/game-item/game-item.component';
-import { OfflineSearchComponent } from './components/offline-search/offline-search.component';
 import { FormsModule } from '@angular/forms';
 import { GameDetailComponent } from './components/game-detail/game-detail.component';
-import { AdvanceSearchComponent } from './components/advance-search/advance-search.component';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -18,9 +17,8 @@ import { AdvanceSearchComponent } from './components/advance-search/advance-sear
     HomeComponent,
     AllGamesComponent,
     GameItemComponent,
-    OfflineSearchComponent,
     GameDetailComponent,
-    AdvanceSearchComponent
+    SearchComponent
   ],
   imports: [
     BrowserModule,

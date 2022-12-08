@@ -1,6 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { catchError, Observable, throwError } from 'rxjs';
 import { IGame } from '../interfaces/igame';
 
 @Injectable({
@@ -27,4 +27,20 @@ export class GameService {
       params: {id: id}
     });
   }
+
+  getGameByCategory(category: string): Observable<IGame[]> {
+    return this.http.get<IGame[]>(this.apiUrl + '/games', {
+      headers: this.headers,
+      params: {category: category}
+    });
+  }
+
+  getGameByPlatform(platform: string): Observable<IGame[]> {
+    return this.http.get<IGame[]>(this.apiUrl + '/games', {
+      headers: this.headers,
+      params: {platform: platform}
+    });
+  }
+
+
 }
