@@ -1,0 +1,10 @@
+<div class="input-group m-3 gap-2">
+  <input
+    #search
+    (input)="inputUpdated(search.value)"
+    class="form-control"
+    type="text"
+    placeholder="search by name"
+  />
+  <input class="btn btn-primary" type="button" value="search" />
+</div>

@@ -1,0 +1,11 @@
+<!-- <button class="btn btn-primary" routerLink="">Go Back</button> -->
+<div class="d-flex flex-column align-items-center">
+  <app-offline-search (inputText)="filterArray($event)"></app-offline-search>
+
+  <div>
+    <app-game-item
+      *ngFor="let game of filteredGames"
+      [game]="game"
+    ></app-game-item>
+  </div>
+</div>

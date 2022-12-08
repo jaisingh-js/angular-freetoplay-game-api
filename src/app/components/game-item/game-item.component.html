@@ -1,0 +1,11 @@
+<div
+  class="container d-flex flex-column justify-content-center align-items-center text-light border-light p-5 border border-secondary mb-3"
+  (click)="getGameDetail(game)"
+>
+  <img src="{{ game.thumbnail }}" alt="{{ game.title }}" />
+  <h3>{{ game.title }}</h3>
+  <p>Genre: {{ game.genre }}</p>
+  <p>Platform: {{ game.platform }}</p>
+  <p>Publisher: {{ game.publisher }}</p>
+  <p>Description: {{ game.short_description }}</p>
+</div>
