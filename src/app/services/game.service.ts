@@ -1,15 +1,16 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, Observable, throwError } from 'rxjs';
+import { Observable} from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { IGame } from '../interfaces/igame';
 
 @Injectable({
   providedIn: 'root'
 })
 export class GameService {
-  apiUrl: string = 'https://free-to-play-games-database.p.rapidapi.com/api';
+  apiUrl: string = environment.apiUrl;
   headers: HttpHeaders = new HttpHeaders({
-    'X-RapidAPI-Key': 'a1052e3ae8msheffc4b191d1bd04p1f7e9ajsnd988b301cb9d',
+    'X-RapidAPI-Key': environment.apiKey,
     'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
   });
 
